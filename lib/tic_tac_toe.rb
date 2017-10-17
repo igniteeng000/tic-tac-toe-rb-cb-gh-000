@@ -12,4 +12,5 @@ display_board(board)
 def input_to_index(gets)
   a = int(gets)
   puts(a)
+end
 input_to_index()
