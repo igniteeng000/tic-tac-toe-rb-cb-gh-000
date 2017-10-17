@@ -26,8 +26,9 @@ end
 def move(array,index,value)
   array[index] = value
 end
+puts(!position_taken(board,3))
 def valid_move(array, ind)
-  if ind.between?(0,8)
+  if ind.between?(0,8) and !position_taken(array,ind)
     return true
   else
     return false
