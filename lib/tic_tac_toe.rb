@@ -34,7 +34,7 @@ end
 def turn(array)
   index = input_to_index()
   if valid_move(array,index)
-    move(array,index,value)
+    move(array,index,"X")
     display_board(array)
   else
     turn(array)
