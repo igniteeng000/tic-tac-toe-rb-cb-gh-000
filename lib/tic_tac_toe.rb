@@ -43,7 +43,7 @@ def turn(array)
     return true
   else
     turn(array)
-  
+
   end
 end
 
@@ -59,9 +59,6 @@ def current_player(array, turn_count)
   end
 end
 
-def won(board)
-end
-  
 puts(valid_move(board,4))
 puts(position_taken(board, input_to_index))
 
