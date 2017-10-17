@@ -46,8 +46,6 @@ def turn_count(array)
   for index in array do
     puts(index)
     #if array[index].eql?"X"or array[index].eql?"O"
-      turns+=1
-  
   end
   return turns
 end
