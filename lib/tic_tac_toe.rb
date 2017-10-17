@@ -36,6 +36,8 @@ def turn(array)
   if valid_move(array,index)
     move(array,index,"X")
     display_board(array)
+    turns+=1
+    return turns
   else
     turn(array)
   end
