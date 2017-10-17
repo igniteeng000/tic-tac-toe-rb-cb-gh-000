@@ -66,6 +66,6 @@ display_board(board)
 #display_board(board)
 ##puts(position_taken(board, input_to_index))
 print(turn(board))
-#print(turn_count(board))
+print(turn_count(board))
 print(current_player(board,2))
 #
