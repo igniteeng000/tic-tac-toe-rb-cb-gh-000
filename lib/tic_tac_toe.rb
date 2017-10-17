@@ -42,6 +42,7 @@ def turn(array)
 end
 
 def turn_count(array)
+  turns = 0
   array.each do |index|
     if array[index] =="X" or array[index] =="O"
       turns+=1
@@ -49,7 +50,7 @@ def turn_count(array)
   end
   return turns
 end
-  
+
 def current_player(array, turn_count)
   if turn_count%2==0
     return "O"
