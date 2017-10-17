@@ -9,3 +9,7 @@ end
 board = [" ","","","X","",""," ","",""]
 display_board(board)
 #display_board(board)
+def input_to_index(gets)
+  a = int(gets)
+  puts(a)
+input_to_index()
