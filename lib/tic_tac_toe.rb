@@ -18,8 +18,3 @@ display_board(board)
 def move(array,index,value)
   array[index] = value
 end
-
-def position_taken(ind)
-    if board[ind] == "X" or board[ind] == "O"
-      
-end
