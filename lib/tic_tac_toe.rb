@@ -59,7 +59,7 @@ def current_player(array, turn_count)
   end
 end
 
-board = [" ","","","X","","","O","",""]
+board = [" X","O","X","X","","","O","",""]
 display_board(board)
 #display_board(board)
 #display_board(board)
