@@ -10,10 +10,16 @@ board = [" ","","","X","",""," ","",""]
 display_board(board)
 #display_board(board)
 def input_to_index()
-  ind = gets.chomp.to_i
-  puts(ind)
+  ind = gets.chomp.to_i-1
   return ind
 end
-input_to_index()
 board[input_to_index()] = 'X'
 display_board(board)
+def move(array,index,value)
+  array[index] = value
+end
+
+def position_taken(ind)
+    if board[ind] == "X" or board[ind] == "O"
+      
+end
