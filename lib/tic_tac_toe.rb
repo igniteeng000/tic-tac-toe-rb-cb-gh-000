@@ -26,4 +26,4 @@ def position_taken(ind)
     else
       return true
 end
-position_taken()
+puts(position_taken(index))
