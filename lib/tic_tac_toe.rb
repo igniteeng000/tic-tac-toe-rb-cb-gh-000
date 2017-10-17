@@ -16,7 +16,7 @@ end
 index = input_to_index()
 board[index] = 'X'
 display_board(board)
-def position_taken(ind)
+def position_taken(board, ind)
     if board[ind] == "X" or board[ind] == "O"
       return false
     else
