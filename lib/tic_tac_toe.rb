@@ -13,8 +13,17 @@ def input_to_index()
   ind = gets.chomp.to_i-1
   return ind
 end
-board[input_to_index()] = 'X'
+index = input_to_index()
+board[index] = 'X'
 display_board(board)
 def move(array,index,value)
   array[index] = value
 end
+
+def position_taken(ind)
+    if board[ind] == "X" or board[ind] == "O"
+      return false
+    else
+      return true
+end
+position_taken()
