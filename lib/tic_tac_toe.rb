@@ -45,8 +45,7 @@ end
 def turn_count(array)
   turns = 0
   array.each do |index|
-    puts(index)
-    #if array[index].eql?"X"or array[index].eql?"O"
+    turns+=1
   end
   return turns
 end
