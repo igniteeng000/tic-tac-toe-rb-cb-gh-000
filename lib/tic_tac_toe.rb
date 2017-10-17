@@ -32,7 +32,8 @@ def valid_move(array, ind)
 end
 
 def turn(array)
-  index = input_to_index()
+  #index = input_to_index()
+  index = 8
   if valid_move(array,index)
     move(array,index,"X")
     display_board(array)
