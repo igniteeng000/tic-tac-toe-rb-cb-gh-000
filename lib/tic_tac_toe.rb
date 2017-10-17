@@ -34,6 +34,34 @@ def valid_move(array, ind)
     return false
   end
 end
+
+def turn(array)
+  ind = input_to_index()
+  if valid_move(array,ind)
+    move(array,index,value)
+    display_board(array)
+    return true
+  else
+    turn(array)
+  
+  end
+end
+
+def turn_count(array)
+  if turn(array)
+    turns+=1
+
+def current_player(array, turn_count)
+  if turn_count%2==0
+    return "O"
+  else
+    return "X"
+  end
+end
+
+def won(board)
+end
+  
 puts(valid_move(board,4))
 puts(position_taken(board, input_to_index))
 
