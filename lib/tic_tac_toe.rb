@@ -34,7 +34,7 @@ def valid_move(array, ind)
     return false
   end
 end
-puts(valid_move(board,3))
+puts(valid_move(board,4))
 puts(position_taken(board, input_to_index))
 
 
