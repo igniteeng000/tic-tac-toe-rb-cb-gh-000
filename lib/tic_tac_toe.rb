@@ -31,7 +31,7 @@ def valid_move(array, ind)
     return true
   else
     return false
-  
+puts(valid_move(input_to_index()))
 puts(position_taken(board, input_to_index))
 
 
