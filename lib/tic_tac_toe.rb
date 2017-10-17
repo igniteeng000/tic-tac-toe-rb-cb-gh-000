@@ -6,16 +6,11 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]}"
 end
 
-board = [" ","","","X","",""," ","",""]
-display_board(board)
-#display_board(board)
 def input_to_index()
   ind = gets.chomp.to_i-1
   return ind
 end
-index = input_to_index()
-board[index] = 'X'
-display_board(board)
+
 def position_taken(board, ind)
     if board[ind] == "X" or board[ind] == "O"
       return true
@@ -23,10 +18,11 @@ def position_taken(board, ind)
       return false
     end
 end
+
 def move(array,index,value)
   array[index] = value
 end
-puts(!position_taken(board,2))
+
 def valid_move(array, ind)
   if ind.between?(0,8) and !position_taken(array,ind)
     return true
@@ -59,9 +55,11 @@ def current_player(array, turn_count)
     return "X"
   end
 end
+board = [" ","","","X","","","O","",""]
+display_board(board)
+#display_board(board)
+#display_board(board)
+##puts(position_taken(board, input_to_index))
+print(turn(board))
 
-puts(valid_move(board,4))
-puts(position_taken(board, input_to_index))
-
-
-puts("tictactoe")
+#
