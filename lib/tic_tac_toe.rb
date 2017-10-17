@@ -26,7 +26,7 @@ end
 def move(array,index,value)
   array[index] = value
 end
-puts(position_taken(board, index))
+puts(position_taken(board, input_to_index))
 
 
 puts("tictactoe")
