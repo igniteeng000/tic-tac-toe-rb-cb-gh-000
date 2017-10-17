@@ -44,7 +44,8 @@ end
 def turn_count(array)
   turns = 0
   for index in array do
-    if array[index].eql?"X"or array[index].eql?"O"
+    puts(index)
+    #if array[index].eql?"X"or array[index].eql?"O"
       turns+=1
     end
   end
@@ -58,6 +59,7 @@ def current_player(array, turn_count)
     return "X"
   end
 end
+
 board = [" ","","","X","","","O","",""]
 display_board(board)
 #display_board(board)
