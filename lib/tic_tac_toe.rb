@@ -60,6 +60,12 @@ def current_player(array, turn_count)
   end
 end
 
+def draw
+end
+
+def over
+end
+
 board = [" X","O","X","X","","","O","",""]
 display_board(board)
 #display_board(board)
