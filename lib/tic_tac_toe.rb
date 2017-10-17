@@ -11,8 +11,8 @@ display_board(board)
 #display_board(board)
 def input_to_index()
   ind = gets.chomp.to_i
-  puts(a)
-  
+  puts(ind)
+
 end
 input_to_index()
 #board[ind] = 'X'
