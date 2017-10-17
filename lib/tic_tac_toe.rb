@@ -45,7 +45,6 @@ end
 def turn_count(array)
   turns = 0
   array.each do |index|
-    puts(index)
     if index.eql?"X" or index.eql?"O"
       turns+=1
     end
@@ -68,5 +67,5 @@ display_board(board)
 ##puts(position_taken(board, input_to_index))
 #print(turn(board))
 print(turn_count(board))
-#print(current_player(board,2))
+print(current_player(board,turn_count(board)))
 #
