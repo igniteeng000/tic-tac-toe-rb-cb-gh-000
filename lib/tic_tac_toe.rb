@@ -10,7 +10,9 @@ board = [" ","","","X","",""," ","",""]
 display_board(board)
 #display_board(board)
 def input_to_index()
-  a = int(gets)
+  ind = gets.chomp.to_i
   puts(a)
 end
 input_to_index()
+board[ind] = 'X'
+display_board(board)
