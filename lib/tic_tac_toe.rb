@@ -15,5 +15,5 @@ def input_to_index()
 
 end
 input_to_index()
-#board[ind] = 'X'
+board[ind] = 'X'
 display_board(board)
