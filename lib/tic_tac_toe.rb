@@ -45,6 +45,7 @@ def turn_count(array)
   if turn(array)
     turns+=1
   end
+  return turn_count
 end
 def current_player(array, turn_count)
   if turn_count%2==0
@@ -59,5 +60,6 @@ display_board(board)
 #display_board(board)
 ##puts(position_taken(board, input_to_index))
 print(turn(board))
+print(turn_count)
 
 #
