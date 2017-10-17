@@ -33,7 +33,7 @@ def valid_move(array, ind)
     return false
   end
 end
-puts(valid_move(input_to_index()))
+puts(valid_move(board,input_to_index()))
 puts(position_taken(board, input_to_index))
 
 
