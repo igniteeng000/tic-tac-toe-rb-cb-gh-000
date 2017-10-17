@@ -27,4 +27,3 @@ def position_taken(ind)
       return true
 end
 
-puts(position_taken(index))
