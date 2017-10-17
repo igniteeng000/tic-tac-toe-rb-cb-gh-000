@@ -18,14 +18,20 @@ board[index] = 'X'
 display_board(board)
 def position_taken(board, ind)
     if board[ind] == "X" or board[ind] == "O"
-      return false
-    else
       return true
+    else
+      return false
     end
 end
 def move(array,index,value)
   array[index] = value
 end
+def valid_move(array, ind)
+  if between?(0,8) and !position_taken(ind)
+    return true
+  else
+    return false
+  
 puts(position_taken(board, input_to_index))
 
 
