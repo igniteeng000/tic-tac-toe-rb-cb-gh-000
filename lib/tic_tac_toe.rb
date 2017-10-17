@@ -27,13 +27,13 @@ def move(array,index,value)
   array[index] = value
 end
 def valid_move(array, ind)
-  if ind.between?(0,8) and !position_taken(ind)
+  if ind.between?(0,8) and !position_taken(array,ind)
     return true
   else
     return false
   end
 end
-puts(valid_move(board,input_to_index()))
+puts(valid_move(board,9)
 puts(position_taken(board, input_to_index))
 
 
