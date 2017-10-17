@@ -50,7 +50,8 @@ end
 def turn_count(array)
   if turn(array)
     turns+=1
-
+  end
+end
 def current_player(array, turn_count)
   if turn_count%2==0
     return "O"
